@@ -13,7 +13,7 @@ arrays = None
 bugs = set()
 
 def getItemData():
-	data = requests.get("http://eden-item-guide.glitch.me/items.json").json()
+	data = requests.get("http://eden-item.github.me/items.json").json()
 
 	with open("itemsGuide.json", "w+", encoding="latin-1") as f:
 		json.dump(data, f, indent=4)
