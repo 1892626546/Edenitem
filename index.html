@@ -1,42 +1,52 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
 <!DOCTYPE html>
-<!-- saved from url=(0034)https://eden-item.github.me/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Required meta tags -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
 
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Eden guide</title>
-  <!-- Bootstrap CSS -->
-  <link href="./Eden guide_files/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <title>Welcome to Glitch!</title>
 
-  <script type="text/javascript" async="" src="./Eden guide_files/analytics.js.下载"></script><script src="./Eden guide_files/jquery-3.2.1.slim.min.js.下载" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
-  
-  <link rel="shortcut icon" href="https://cdn.glitch.com/8c45d4b3-df9c-4351-8246-870093fc35d2%2Ffavicon.ico?1526965132661"> 
-  <link rel="icon" type="image/png" href="https://cdn.glitch.com/8c45d4b3-df9c-4351-8246-870093fc35d2%2Ffavicon-32x32.png?1526965132931" sizes="32x32">
-  <link rel="icon" type="image/png" href="https://cdn.glitch.com/8c45d4b3-df9c-4351-8246-870093fc35d2%2Ffavicon-16x16.png?1526965132349" sizes="16x16">
-  
-  <style>
-      html {
-        padding: 20px;
-      }
-  </style>
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
 
-<script async="" src="./package.json"></script>
-</head>
-<body>
-  <h1 class="navbar-brand">Eden RPG</h1>
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>A Dream of the Future</h1>
+    </header>
 
-<style>
-  .node { 
-    padding: 0 2px;
-    min-width: 60px;
-    text-align: center;
-    height: 30px;
-    background: #fff; 
-  }
+    <main>
+      <h2>Oh hi,</h2>
 
-  .node.node-name {
-    line-height: 30px;
-    color: #9B9B9B;
-  }
-</style></body></html>
+      <p>Tell me your hopes and dreams:</p>
+
+      <form>
+        <label>
+          New Dream
+          <input name="dream" type="text" maxlength="100" required placeholder="Dreams!">
+        </label>
+        <button type="submit" id="submit-dream">Add Dream</button>
+      </form>
+
+      <section class="dreams">
+        <ul id="dreams">
+          <em>loading dreams&hellip;</em>
+        </ul>
+      </section>
+    </main>
+
+    <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:2em;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
